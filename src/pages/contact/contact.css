@@ -1,0 +1,55 @@
+.contact__container {
+    height: 50vh;
+    display: flex;
+    place-content: center;
+}
+
+.container_title {
+    color: var(--color-secondary);
+    margin-bottom: 1rem;
+}
+
+.contact_link {
+    display: flex;
+    gap: 1rem;
+}
+
+.contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin-top: 23rem;
+}
+
+.contact__wrapper a {
+    display: flex;
+    height: fit-content;
+    background: var(--color-primary);
+    font-size: 2rem;
+    border: 2px solid transparent;
+    transition: var(--transition);
+    border-radius: 1.5rem;
+    padding: .3rem;
+}
+
+.contact__wrapper a:hover {
+    background: transparent;
+    border-color: var(--color-gray-100);
+}
+
+/* Madia Queries (small screens) */
+
+@media screen and (max-width:768px) {
+    .contact__wrapper {
+        margin-top: 20rem;
+    }
+
+    .contact__wrapper a {
+        font-size: 1.2rem;
+        border-radius: 1rem;
+    }
+
+    .container_title>h2 {
+        margin-bottom: 0;
+    }
+}

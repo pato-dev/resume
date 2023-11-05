@@ -1,0 +1,11 @@
+.notfound__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.notfound__container .btn {
+    margin-top: 3rem;
+}

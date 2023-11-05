@@ -1,0 +1,60 @@
+.home_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 2rem;
+    color: aliceblue;
+}
+
+.marquee {
+    max-width: 31.5rem;
+}
+
+.desc {
+    margin-top: 1rem;
+}
+
+.download_btn {
+    background-color: hsl(var(--primary-hue), 100%, 50%);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: aliceblue;
+}
+
+.download_btn:hover {
+    cursor: pointer;
+    opacity: .75;
+}
+
+@media screen and (max-width:1440px) {
+    .download_btn {
+        /* margin-top: 6.8rem; */
+    }
+}
+
+@media screen and (max-width:1025px) {
+    .home_cont {
+        margin-top: 0rem;
+    }
+
+    .download_btn {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {}
+
+@media screen and (max-width:425px) {
+    .home_cont {
+        padding-top: 1rem;
+    }
+
+    .home_cont h1 {
+        font-size: 1.2rem;
+    }
+
+    .hello {
+        color: hsl(var(--color-secondary), 100%, 50%);
+    }
+}
